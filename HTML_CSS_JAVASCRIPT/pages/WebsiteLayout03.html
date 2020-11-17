@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsiteLayout-03</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .col-1 {
+            background: #D7E8D4;
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .col-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content>article {
+            flex: 4;
+            min-height: 60vh;
+        }
+
+        header,
+        footer {
+            background: yellowgreen;
+            height: 20vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        header{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header,
+        footer,
+        article,
+        nav {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="col-1">Navigation Bar</nav>
+    <div class="col-2">
+        <header>HEADER-Sample Flexbox Example</header>
+        <main class="content">
+            <article>
+                <div class="item">
+                    <h2>First Article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, necessitatibus doloribus
+                        dolores
+                        maxime, vitae commodi voluptate a nobis officiis nostrum deleniti repellendus sed ipsa delectus
+                        facilis perspiciatis repellat quaerat quibusdam.</p>
+                </div>
+                <div class="item">
+                    <h2>Second Article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, necessitatibus doloribus
+                        dolores
+                        maxime, vitae commodi voluptate a nobis officiis nostrum deleniti repellendus sed ipsa delectus
+                        facilis perspiciatis repellat quaerat quibusdam.</p>
+                </div>
+                <div class="item">
+                    <h2>Third Article</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque pariatur aspernatur temporibus
+                        neque
+                        dolorum amet quidem beatae sunt voluptates. Illum veritatis sunt iure quod suscipit! Vero a
+                        blanditiis pariatur veniam.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque pariatur aspernatur temporibus
+                        neque
+                        dolorum amet quidem beatae sunt voluptates. Illum veritatis sunt iure quod suscipit! Vero a
+                        blanditiis pariatur veniam.</p>
+                </div>
+            </article>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

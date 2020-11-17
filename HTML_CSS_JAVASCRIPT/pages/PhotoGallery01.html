@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - 01</title>
+    <style>
+        .cards {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            flex-direction: row;
+            max-height: 100vh;
+            justify-content: space-evenly;
+        }
+
+        .cards img {
+            margin: 10px;
+            border: 3px solid #000;
+            box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+            max-width: 23vw;
+        }
+        .item{
+        width: 300px;
+        height:300px;
+        }
+    </style>
+</head>
+<main class="cards">
+    <img src="/assets/nature1.jpg" alt="Sample photo" class="item">
+    <img src="/assets/nature2.jpg" alt="Sample photo" class="item">
+    <img src="/assets/nature3.jpg" alt="Sample photo" class="item">
+    <img src="/assets/nature4.jpg" alt="Sample photo" class="item">
+    <img src="/assets/nature5.jpeg" alt="Sample photo" class="item">
+    <img src="/assets/nature5.jpg" alt="Sample photo" class="item">
+    <img src="/assets/nature6.jpg" alt="Sample photo" class="item">
+</main>
+
+</html>
